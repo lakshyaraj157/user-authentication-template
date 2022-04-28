@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+    <div class="form_container">
+        <div id="register_form" style="display: block;">
+            <h3 class="form_heading">Register for an account</h3>
+            <form class="form">
+                <div class="form_group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form_control" name="name" id="name" placeholder="Enter your full name">
+                </div>
+                <div class="form_group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form_control" name="username" id="username" placeholder="Enter unique username">
+                </div>
+                <div class="form_group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form_control" name="email" id="email" placeholder="Enter your email address">
+                </div>
+                <div class="form_group">
+                    <label for="password1">Password</label>
+                    <input type="password" class="form_control" name="password1" id="password1" placeholder="Choose a strong password">
+                </div>
+                <div class="form_group">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" class="form_control" name="password2" id="password2" placeholder="Re-type your choosen password">
+                </div>
+                <button type="button" class="btn">Register</button>
+            </form>
+            <p class="toggle_text">Already registered ? <span class="toggle_link" id="toggle_login">Login Here</span></p>
+        </div>
+        <div id="login_form" style="display: none;">
+            <h3 class="form_heading">Login into your account</h3>
+            <form class="form">
+                <div class="form_group">
+                    <label for="lusername">Username</label>
+                    <input type="text" class="form_control" name="lusername" id="lusername" placeholder="Enter your username">
+                </div>
+                <div class="form_group">
+                    <label for="lpassword">Password</label>
+                    <input type="password" class="form_control" name="lpassword" id="lpassword" placeholder="Enter your password">
+                </div>
+                <button type="button" class="btn">Login</button>
+            </form>
+            <p class="toggle_text">Not registered yet ? <span class="toggle_link" id="toggle_register">Register Here</span></p>
+        </div>
+    </div>
+    
+    <script src="assets/js/script.min.js"></script>
+</body>
+</html>
